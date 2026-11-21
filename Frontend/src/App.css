@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Playwrite+IE:wght@100..400&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Playwrite+IE:wght@100..400&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap'); */
+@theme{
+    --color-peachbg: var(--color-peachbg-runtime);
+    --color-whitishcard: var(--color-whitishcard-runtime);
+    --color-navbordercolor: var(--color-navbordercolor-runtime);
+    --color-navbgcol: var(--color-navbgcol-runtime);
+    --color-navtextcol: var(--color-navtextcol-runtime);
+    --color-navlihoverbgcol: var(--color-navlihoverbgcol-runtime);
+    --color-headtextcolorlighttheme: var(--color-headtextcolorlighttheme-runtime);
+    --color-mynamecol:var(--color-mynamecol-runtime);
+    --color-namebelowtextcol: var(--color-namebelowtextcol-runtime);
+    --color-hirebgcol: var(--color-hirebgcol-runtime);
+    --color-aboutskilltextcol: var(--color-aboutskilltextcol-runtime);
+    --color-bordprojcardlinecol: var(--color-brodprojcardlinecol-runtime);
+    --color-quantumtextcol: var(--color-quantumtextcol-runtime);
+    --color-contacttextcol: var(--color-contacttextcol-runtime);
+    --font-typecaveat: "Caveat", sans-serif; 
+    --font-instru: "Instrument Serif", Georgia, serif;
+    --font-dmsan: "DM Sans", system-ui, sans-serif;
+    --animate-toastFadeIn: toastFadeIn 400ms ease-out;
+}
+:root{
+    --color-peachbg-runtime: rgb(253,240,231);
+    --color-whitishcard-runtime: rgb(254,249,246);
+    --color-navbordercolor-runtime: rgb(237,214,200);
+    --color-navbgcol-runtime: rgb(254,249,246);
+    --color-navtextcol-runtime: rgb(23,33,59);
+    --color-navlihoverbgcol-runtime: rgb(247,227,214);
+    --color-headtextcolorlighttheme-runtime: rgb(169,164,169);
+    --color-mynamecol-runtime:rgb(240,144,110);
+    --color-namebelowtextcol-runtime: rgb(250,243,231);
+    --color-hirebgcol-runtime: rgb(239,130,98);
+    --color-aboutskilltextcol-runtime: rgb(58,65,87);
+    --color-bordprojcardlinecol-runtime: rgb(185,106,88);
+    --color-quantumtextcol-runtime: rgb(87,96,124);
+    --color-contacttextcol-runtime: rgb(219,209,205);
+}
+[data-theme="dark"]{
+    --color-peachbg-runtime: rgb(15,22,46);
+    --color-whitishcard-runtime: rgb(254,48,89);
+    --color-navbordercolor-runtime: rgb(41,52,89);
+    --color-navbgcol-runtime: rgb(24,33,61);
+    --color-navtextcol-runtime: rgb(253,240,231);
+    --color-navlihoverbgcol-runtime: rgb(32,42,79);
+    --color-headtextcolorlighttheme-runtime: rgb(188,182,188);
+    --color-mynamecol-runtime:rgb(240,144,110);
+    --color-namebelowtextcol-runtime: rgb(41, 37, 29);
+    --color-hirebgcol-runtime: rgb(240,144,110);
+    --color-aboutskilltextcol-runtime: rgb(219,209,206);
+    --color-bordprojcardlinecol-runtime: rgb(185,106,88);
+    --color-quantumtextcol-runtime: rgb(124, 131, 151);
+    --color-contacttextcol-runtime: rgb(91, 87, 86);
+}
+@keyframes toastFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
