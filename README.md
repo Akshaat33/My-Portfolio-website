@@ -1,4 +1,4 @@
-🚀 Personal Portfolio
+#🚀 Personal Portfolio
 
 A full-stack personal portfolio website built to showcase my skills, projects, experience, and professional journey.
 
