@@ -32,7 +32,7 @@ const Contacts = () => {
         });
         try {
             const response = await axios.post(
-                'http://localhost:5001/api/contact',
+                'https://my-portfolio-website-nvvd.onrender.com/api/contact',
                 formData
             );
             setFormStatus({
