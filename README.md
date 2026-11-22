@@ -152,11 +152,11 @@ Developing this project gave me hands-on experience with:
 
 ## Live Portfolio
 
-**Website:** Add your deployed portfolio URL here.
+**Website:** https://my-portfolio-website-eight-lake.vercel.app/
 
 ## Author
 
-**Akki**
+**Akshat Pandey**
 
 ---
 
