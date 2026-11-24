@@ -57,7 +57,7 @@ const Contacts = () => {
     useEffect(() => {
         const fetchLinks = async () => {
             try {
-                const res = await axios.get('YOUR_ABOUT_API_URL');
+                const res = await axios.get('/about');
                 setLinks(res.data.data.links);
             } catch (error) {
                 console.error('Failed to fetch social links:', error);
