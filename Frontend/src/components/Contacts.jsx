@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import api from '../services/api';
 
 const Contacts = () => {
     const [links, setLinks] = useState({});
@@ -57,7 +58,7 @@ const Contacts = () => {
     useEffect(() => {
         const fetchLinks = async () => {
             try {
-                const res = await axios.get('/about');
+                const res = await api.get('/about');
                 setLinks(res.data.data.links);
             } catch (error) {
                 console.error('Failed to fetch social links:', error);
