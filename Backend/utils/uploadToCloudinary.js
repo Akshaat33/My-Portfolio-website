@@ -5,7 +5,8 @@ const uploadToCloudinary = (fileBuffer) => {
 
         const uploadStream = cloudinary.uploader.upload_stream(
             {
-                folder: "portfolio/profile"
+                folder: "portfolio/profile",
+                resource_type: resourceType
             },
             (error, result) => {
 
