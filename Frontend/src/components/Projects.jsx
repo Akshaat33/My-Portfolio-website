@@ -44,15 +44,15 @@ const Projects = () => {
             <div className=' flex flex-col w-full max-w-[1080px] gap-[10px]'>
                 <div className='toptext text-aboutskilltextcol text-[13px] '>PROJECTS</div>
                 <div className='toptext text-[80px] leading-[0.9] text-navtextcol mb-[20px] font-instru italic tracking-tighter scale-y-[1.25] font-thin'>Selected work</div>
-                <div className="projcardsss flex flex-wrap gap-[20px] mt-[20px]">
+                <div className="projcardsss grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] mt-[20px]">
                     {projectContent}
+                </div>
                     {selectedProject && (
                         <ProjectPopup
                             project={selectedProject}
                             onClose={() => setSelectedProject(null)}
                         />
                     )}
-                </div>
             </div>
         </div>
     )
